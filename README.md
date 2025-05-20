@@ -1,2 +1,4 @@
-# ra2581392413003
-Repositório do aluno POLLYANA ROBERTA DE SOUSA.
+# Portfólio de Projetos - Fatec Jacareí
+### Aluno: POLLYANA ROBERTA DE SOUSA
+### Curso: Desenvolvimento de Software Multiplataforma
+### Turma: 1o. Semestre de 2024
