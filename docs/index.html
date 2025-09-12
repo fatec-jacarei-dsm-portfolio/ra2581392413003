@@ -31,6 +31,7 @@
       display: flex;
       justify-content: flex-end;
       align-items: center;
+      gap: 1rem;
     }
 
     header a {
@@ -40,11 +41,21 @@
       padding: 0.6rem 1.2rem;
       border-radius: 30px;
       font-weight: 600;
-      transition: background 0.3s;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: background 0.3s, transform 0.2s;
     }
 
     header a:hover {
       background-color: #0e4c45;
+      transform: scale(1.05);
+    }
+
+    header svg {
+      width: 18px;
+      height: 18px;
+      fill: white;
     }
 
     main {
@@ -154,52 +165,16 @@
 <body>
   <header>
     <a href="portfolio.html">Portfólio</a>
+    <a href="https://www.linkedin.com/in/pollyanaroberta42/" target="_blank" rel="noopener noreferrer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <path
+          d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83 0 53.4 0 23.7 24.09-.4 53.79-.4s53.8 24.1 53.8 53.8-24.1 54-53.8 54zM447.9 448h-92.4V306.4c0-33.7-12.1-56.7-42.5-56.7-23.2 0-37 15.6-43 30.7-2.2 5.3-2.8 12.7-2.8 20.1V448h-92.4s1.2-267.3 0-294.9h92.4v41.8c12.3-19 34.3-46.1 83.4-46.1 60.9 0 106.8 39.8 106.8 125.2V448z" />
+      </svg>
+      LinkedIn
+    </a>
   </header>
 
   <main>
     <div class="about-container">
       <div class="about-img">
-        <img src="assets/foto-polly.jpg" alt="Foto de Pollyana" />
-      </div>
-      <div class="about-text">
-        <h1>Olá, eu sou a Polly!</h1>
-        <p>
-          Oi! Meu nome é <strong>Pollyana Roberta</strong>, tenho 30 anos e sou apaixonada por tecnologia, design e jogos.
-          Atualmente, estou cursando o <strong>tecnólogo em Desenvolvimento de Software Multiplataforma</strong> na
-          <strong>Fatec de Jacareí</strong>.
-        </p>
-
-        <p>
-          Ao longo da minha jornada acadêmica e profissional, venho desenvolvendo habilidades em tecnologias como
-          <strong>React, Next.js, Tailwind CSS, JavaScript, TypeScript, Node.js, C#, Python, SQL e NoSQL</strong>, além
-          de ferramentas como <strong>PostgreSQL, MySQL, Mongoose, Visual Studio, VS Code, Unity</strong> e
-          <strong>Blender</strong>.
-        </p>
-
-        <p>
-          Atualmente sou estagiária na <strong>Ericsson</strong>, onde atuo no desenvolvimento de
-          <strong>salas de Realidade Virtual</strong>, <strong>modelagem 3D</strong>, <strong>automação</strong> e
-          <strong>aplicações interativas com Windows Forms em C#</strong> — um ambiente desafiador e inovador que me
-          permite aplicar a tecnologia de forma criativa e impactante.
-        </p>
-
-        <p>
-          Além do universo do código, sou movida pela curiosidade e pelo prazer de aprender. Me interesso por temas como
-          <strong>desenvolvimento pessoal</strong>, <strong>idiomas</strong> e <strong>culinária</strong>. No meu tempo
-          livre, adoro cozinhar, jogar videogame, cuidar dos meus pets e praticar <strong>atividades físicas</strong>,
-          que me ajudam a manter o equilíbrio entre corpo e mente.
-        </p>
-      </div>
-    </div>
-
-    <div style="margin-top: 2.5rem; text-align: center; width: 100%;">
-      <a href="assets/Currículo Polly.pdf" download class="btn-download">Baixar meu currículo</a>
-    </div>
-  </main>
-
-  <footer>
-    Desenvolvido por Pollyana Roberta — 2025
-  </footer>
-</body>
-
-</html>
+        <img src="assets
