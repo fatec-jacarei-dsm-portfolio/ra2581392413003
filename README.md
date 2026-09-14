@@ -7,7 +7,7 @@
 ---
 
 ## 🔗 Links Importantes
-- **Portfólio Online:** [https://pollymeowth.github.io/](https://pollymeowth.github.io/)  
+- **Portfólio Online:** [https://pollymeowth.github.io/](https://pollymeowth.github.io/Portfolio/)  
 - **Pitch de Apresentação:** [Assista aqui](https://youtu.be/WagZYGAmRsg)  
 
 ---
