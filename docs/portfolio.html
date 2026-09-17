@@ -1,239 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfólio | Polly</title>
+  <title></title>
 
   <!-- SEO -->
-  <meta name="description" content="Portfólio de projetos de Pollyana Roberta: aplicações web com React, Next.js, TypeScript, HTML/CSS, projetos acadêmicos DSM, e estudos em Unity/C#." />
+  <meta name="description"
+    content="Portfólio de Pollyana Roberta — desenvolvedora Full Stack com experiência em React, TypeScript, Node.js, Python, C#, Unity/VR e automações. Veja projetos, tecnologias e currículo." />
 
-  <!-- Fonte -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <!-- Fontes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
-    body{background-color:#f0f4f8;color:#111;line-height:1.6;min-height:100vh;display:flex;flex-direction:column}
-    header{padding:1rem 2rem;background-color:#000;display:flex;justify-content:flex-end;align-items:center;gap:1rem;border-bottom:1px solid #ccc}
-    header a{text-decoration:none;background-color:#16746c;color:#fff;padding:.6rem 1.2rem;border-radius:30px;font-weight:600;display:inline-flex;align-items:center;gap:.5rem;transition:background .3s,transform .2s}
-    header a:hover{background-color:#0e4c45;transform:scale(1.05)}
-    header a:focus-visible{outline:3px solid #18a499;outline-offset:3px}
-    header svg{width:18px;height:18px;fill:#fff}
+  <!-- Ícones (Devicon) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
 
-    main{max-width:1200px;margin:2rem auto;padding:0 1rem;flex-grow:1}
-    .titulo-principal{text-align:center;font-size:2.8rem;margin-bottom:3rem;color:#0e4c45;font-weight:700}
+  <!-- Boxicons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-    section{margin-bottom:4rem;padding-bottom:1rem}
-    section+section{border-top:1px solid #eee;padding-top:3rem}
-    section h2{font-size:2rem;margin-bottom:1.5rem;color:#16746c;text-align:left;border-left:6px solid #16746c;padding-left:1rem}
-
-    /* Grid responsiva: 3 colunas em telas largas, 2 no médio, 1 no mobile */
-    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:2rem}
-    @media (max-width:1024px){.cards{grid-template-columns:repeat(2,1fr)}}
-    @media (max-width:768px){
-      .titulo-principal{font-size:2.2rem}
-      section h2{font-size:1.6rem}
-      .cards{grid-template-columns:1fr}
-    }
-
-    .card{background-color:#fff;border-radius:12px;overflow:hidden;box-shadow:0 8px 18px rgba(0,0,0,.1);transition:transform .3s ease,box-shadow .3s ease;display:flex;flex-direction:column}
-    .card:hover{transform:translateY(-6px);box-shadow:0 12px 22px rgba(0,0,0,.15)}
-    .card img{width:100%;height:200px;object-fit:cover;object-position:top;display:block}
-
-    .card-content{padding:1rem;display:flex;flex-direction:column;flex-grow:1}
-    .card-content h3{font-size:1.3rem;color:#111;margin-bottom:.5rem}
-    .card-content p{font-size:.95rem;color:#444;margin-bottom:.5rem}
-    .card-content h4{font-size:1rem;margin:.5rem 0 .25rem 0;color:#111}
-    .tecnologias{font-size:.9rem;color:#16746c;font-weight:600}
-
-    .btn{margin-top:1rem;align-self:flex-start;background-color:#16746c;color:#fff;padding:.5rem 1rem;border-radius:20px;text-decoration:none;font-weight:600;transition:background .3s}
-    .btn:hover{background-color:#0e4c45}
-    .btn:focus-visible{outline:3px solid #18a499;outline-offset:3px}
-
-    footer{text-align:center;padding:1rem;font-size:.9rem;background-color:#000;color:#faf8f8;margin-top:auto}
-  </style>
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css" />
 </head>
+
 <body>
-  <header>
-    <a href="index.html" aria-label="Ir para a página Sobre Mim">Sobre Mim</a>
 
-    <!-- GitHub -->
-    <a href="https://github.com/pollymeowth" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Polly em nova aba">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96" aria-hidden="true" focusable="false">
-        <path d="M48.9 0C21.9 0 0 22 0 49.2c0 21.7 14 40 33.5 46.5 2.5.5 3.4-1.1 3.4-2.4 0-1.2 0-4.3-.1-8.5-13.6 3-16.5-6.6-16.5-6.6-2.3-5.8-5.6-7.3-5.6-7.3-4.6-3.2.3-3.1.3-3.1 5.1.4 7.8 5.3 7.8 5.3 4.5 7.7 11.9 5.5 14.8 4.2.5-3.3 1.8-5.5 3.2-6.8-10.8-1.2-22.2-5.4-22.2-24.2 0-5.3 1.9-9.7 5.1-13.1-.5-1.2-2.2-6.1.5-12.8 0 0 4.1-1.3 13.5 5 3.9-1.1 8.1-1.7 12.3-1.7s8.4.6 12.3 1.7c9.4-6.3 13.5-5 13.5-5 2.7 6.7 1 11.6.5 12.8 3.2 3.4 5.1 7.8 5.1 13.1 0 18.9-11.4 23-22.3 24.2 1.8 1.6 3.4 4.7 3.4 9.6 0 6.9-.1 12.5-.1 14.2 0 1.3.9 2.9 3.4 2.4C82 89.2 96 70.9 96 49.2 96 22 74.1 0 48.9 0z"/>
-      </svg>
-      GitHub
-    </a>
-
-    <!-- LinkedIn -->
-    <a href="https://www.linkedin.com/in/pollyanaroberta42/" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Polly em nova aba">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true" focusable="false">
-        <path d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83 0 53.4 0 23.7 24.09-.4 53.79-.4s53.8 24.1 53.8 53.8-24.1 54-53.8 54zM447.9 448h-92.4V306.4c0-33.7-12.1-56.7-42.5-56.7-23.2 0-37 15.6-43 30.7-2.2 5.3-2.8 12.7-2.8 20.1V448h-92.4s1.2-267.3 0-294.9h92.4v41.8c12.3-19 34.3-46.1 83.4-46.1 60.9 0 106.8 39.8 106.8 125.2V448z"/>
-      </svg>
-      LinkedIn
-    </a>
+  <!-- ===== NAVBAR ===== -->
+  <header class="cabecalho">
+    <span class="logo" data-i18n="logo">Portfólio Polly</span>
+    <nav class="navbar">
+      <a href="#home" style="--i:1">Home</a>
+      <a href="#sobre" style="--i:2" data-i18n="nav-about">Sobre Mim</a>
+      <a href="#habilidades" style="--i:3" data-i18n="nav-skills">Habilidades</a>
+      <a href="#projetos" style="--i:4" data-i18n="nav-projects">Projetos</a>
+      <a href="#contato" style="--i:5" data-i18n="nav-contact">Contato</a>
+      <button class="btn-lang" id="btn-lang" onclick="toggleLang()" aria-label="Switch language">
+        🇺🇸 EN
+      </button>
+    </nav>
   </header>
 
-  <main>
-    <h1 class="titulo-principal">MEUS PROJETOS</h1>
+  <!-- ===== HOME / HERO ===== -->
+  <section class="Home" id="home">
+    <div class="fundo-img">
+      <img src="assets/foto-polly2.png" alt="Foto de Pollyana Roberta" />
+    </div>
+    <div class="home-content">
+      <h3 data-i18n="hero-greeting">Olá, meu nome é</h3>
+      <h1>Pollyana Roberta</h1>
+      <h3 data-i18n-prefix="hero-role-prefix">e eu sou <span class="text"></span></h3>
 
-    <section id="projetos-academicos">
-      <h2>Projetos Acadêmicos</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="assets/DSM-1.png" alt="Capa do projeto Site de Metodologia Scrum" loading="lazy">
-          <div class="card-content">
-            <h3>Site de Metodologia Scrum — 1º Semestre</h3>
-            <p>Curso online sobre Scrum desenvolvido no 1º semestre de DSM/Fatec Jacareí, com foco em metodologias ágeis e colaboração em equipe.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">HTML, CSS, JavaScript, PostgreSQL</p>
-            <a href="https://github.com/TechWizards-Tech/DSM-1" class="btn" aria-label="Ver repositório do projeto Site de Metodologia Scrum">Ver Projeto</a>
-          </div>
-        </div>
+      <p data-i18n="hero-quote">"A tecnologia move o mundo." — Steve Jobs</p>
 
-        <div class="card">
-          <img src="assets/DSM-2.png" alt="Capa do projeto Contador de Calorias" loading="lazy">
-          <div class="card-content">
-            <h3>Contador de Calorias — 2º Semestre</h3>
-            <p>Aplicação web para monitoramento calórico e recomendação de dietas, seguindo Scrum. UI em React/TypeScript e dados em PostgreSQL.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">HTML, CSS, JavaScript, React, PostgreSQL</p>
-            <a href="https://github.com/TechWizards-Tech/DSM-2" class="btn" aria-label="Ver repositório do projeto Contador de Calorias">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/DSM-3.png" alt="Capa do projeto Estação Meteorológica" loading="lazy">
-          <div class="card-content">
-            <h3>Estação Meteorológica — 3º Semestre</h3>
-            <p>Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas, comparação, download em CSV e alertas aos navegantes.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">HTML, CSS, JavaScript, React, Next.js, Tailwind, Vue</p>
-            <a href="https://github.com/TechWizards-Tech/HALF-TECH---DSM-3" class="btn" aria-label="Ver repositório do projeto Estação Meteorológica">Ver Projeto</a>
-          </div>
-        </div>
-        <div class="card">
-          <img src="assets/DSM-4.jpeg" alt="Sistema de Captura Remota para Microscópios" loading="lazy">
-          <div class="card-content">
-            <h3>Sistema de Captura Remota para Microscópios — 4º semestre</h3>
-            <p>O sistema coleta imagens e vídeos de microscópios ópticos por meio de uma câmera digital acoplada, transmite o fluxo de vídeo em tempo real via Wi-Fi para um servidor em nuvem, e disponibiliza aplicativo mobile e interface web para visualização e armazenamento de snapshots. O projeto atende aos microscópios disponíveis na FATEC Jacareí e melhora a experiência didática dos alunos.</p>            
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">Raspberry Pi, Python (Flask), React, React Native, GitHub Actions</p>
-            <a href="https://github.com/TechWizards-Tech/TECH-WIZARDS-DSM-4" class="btn" aria-label="Ver repositório do projeto Sistema de Captura Remota para Microscópios">
-              Ver Projeto
-            </a>
-          </div>
-        </div>
+      <div class="home-sci">
+        <a href="https://github.com/pollymeowth" target="_blank" rel="noopener noreferrer" aria-label="GitHub"
+          style="--i:1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 98 96" aria-hidden="true">
+            <path
+              d="M48.9 0C21.9 0 0 22 0 49.2c0 21.7 14 40 33.5 46.5 2.5.5 3.4-1.1 3.4-2.4 0-1.2 0-4.3-.1-8.5-13.6 3-16.5-6.6-16.5-6.6-2.3-5.8-5.6-7.3-5.6-7.3-4.6-3.2.3-3.1.3-3.1 5.1.4 7.8 5.3 7.8 5.3 4.5 7.7 11.9 5.5 14.8 4.2.5-3.3 1.8-5.5 3.2-6.8-10.8-1.2-22.2-5.4-22.2-24.2 0-5.3 1.9-9.7 5.1-13.1-.5-1.2-2.2-6.1.5-12.8 0 0 4.1-1.3 13.5 5 3.9-1.1 8.1-1.7 12.3-1.7s8.4.6 12.3 1.7c9.4-6.3 13.5-5 13.5-5 2.7 6.7 1 11.6.5 12.8 3.2 3.4 5.1 7.8 5.1 13.1 0 18.9-11.4 23-22.3 24.2 1.8 1.6 3.4 4.7 3.4 9.6 0 6.9-.1 12.5-.1 14.2 0 1.3.9 2.9 3.4 2.4C82 89.2 96 70.9 96 49.2 96 22 74.1 0 48.9 0z" />
+          </svg>
+        </a>
+        <a href="https://www.linkedin.com/in/pollyanaroberta42/" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn" style="--i:2">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" aria-hidden="true">
+            <path
+              d="M100.28 448H7.4V148.9h92.88zM53.79 108.1C24.09 108.1 0 83 0 53.4 0 23.7 24.09-.4 53.79-.4s53.8 24.1 53.8 53.8-24.1 54-53.8 54zM447.9 448h-92.4V306.4c0-33.7-12.1-56.7-42.5-56.7-23.2 0-37 15.6-43 30.7-2.2 5.3-2.8 12.7-2.8 20.1V448h-92.4s1.2-267.3 0-294.9h92.4v41.8c12.3-19 34.3-46.1 83.4-46.1 60.9 0 106.8 39.8 106.8 125.2V448z" />
+          </svg>
+        </a>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <section id="projetos-pessoais">
-      <h2>Projetos Pessoais</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="assets/sorveteria.png" alt="Capa do projeto Sorveteria" loading="lazy">
-          <div class="card-content">
-            <h3>Sorveteria</h3>
-            <p>SPA com React e Next.js representando o site de uma sorveteria fictícia.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">React, JavaScript, Next.js</p>
-            <a href="https://github.com/Pollymeowth/Projeto-Sorveteria" class="btn" aria-label="Ver repositório do projeto Sorveteria">Ver Projeto</a>
-          </div>
-        </div>
+  <!-- ===== SOBRE MIM ===== -->
+  <section class="sobre" id="sobre">
+    <div class="sobre-img">
+      <img src="assets/foto-polly.jpg" alt="Foto de Pollyana" />
+    </div>
+    <div class="texto-sobre">
+      <h2 data-i18n="about-title">Sobre Mim</h2>
+      <p data-i18n="about-p1">
+        Sou desenvolvedora de Software Multiplataforma em início de carreira, com foco em
+        <strong>desenvolvimento Full Stack</strong> e experiência prática em projetos web,
+        APIs, automações e aplicações interativas. Trabalho com <strong>JavaScript, TypeScript,
+          React, Node.js, Python, SQL</strong> e criação de <strong>APIs REST</strong>, sempre
+        buscando transformar ideias em soluções funcionais, organizadas e bem estruturadas.
+      </p>
+      <p data-i18n="about-p2">
+        Ao longo da minha formação, desenvolvi projetos completos, desde sistemas web até jogos
+        e experiências interativas em Unity, explorando lógica, dados e interface. Fora do código,
+        gosto de jogos, leitura e exercício físico — interesses que influenciam meu modo de pensar,
+        trazendo criatividade, disciplina e resolução de problemas para o desenvolvimento de software.
+      </p>
+      <a href="assets/CURRICULO POLLYANA ROBERTA DE SOUSA.pdf" download class="botao-curriculo"
+        data-i18n="about-btn">Baixar
+        Currículo</a>
+    </div>
+  </section>
 
-        <div class="card">
-          <img src="assets/agencia.png" alt="Capa do projeto Agência de Design Digital" loading="lazy">
-          <div class="card-content">
-            <h3>Agência de Design Digital</h3>
-            <p>SPA em React/Next.js para uma agência fictícia, com alternância de tema escuro.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">React, JavaScript, Next.js</p>
-            <a href="https://github.com/Pollymeowth/agencia-design-digital" class="btn" aria-label="Ver repositório do projeto Agência de Design Digital">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/otica.png" alt="Capa do projeto Ótica Vida" loading="lazy">
-          <div class="card-content">
-            <h3>Ótica Vida</h3>
-            <p>SPA em React/Next.js para uma ótica fictícia.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">React, JavaScript, Next.js</p>
-            <a href="https://github.com/Pollymeowth/Projeto-Otica-Vida" class="btn" aria-label="Ver repositório do projeto Ótica Vida">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/barbearia.png" alt="Capa do projeto Landing Page Barbearia" loading="lazy">
-          <div class="card-content">
-            <h3>Landing Page Barbearia</h3>
-            <p>Landing page em React com controle de tema via <code>useState</code> (modo escuro).</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">React, JavaScript, Next.js</p>
-            <a href="https://github.com/Pollymeowth/Projeto-Barbearia" class="btn" aria-label="Ver repositório do projeto Barbearia">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/Clinica Medica.png" alt="Capa do projeto Clínica Médica" loading="lazy">
-          <div class="card-content">
-            <h3>Clínica Médica</h3>
-            <p>Site institucional para clínica médica fictícia.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">React, JavaScript, Next.js</p>
-            <a href="https://github.com/Pollymeowth/Clinica-Medica" class="btn" aria-label="Ver repositório do projeto Clínica Médica">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/POUSADA-SECRETA-HOME.png" alt="Capa do projeto Pousada Secreta" loading="lazy">
-          <div class="card-content">
-            <h3>Pousada Secreta</h3>
-            <p>Website institucional de uma pousada fictícia.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">HTML, CSS</p>
-            <a href="https://github.com/Pollymeowth/Pousada" class="btn" aria-label="Ver repositório do projeto Pousada Secreta">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/Provedor Hospedagem HOME.png" alt="Capa do projeto Provedor de Hospedagem" loading="lazy">
-          <div class="card-content">
-            <h3>Provedor de Hospedagem</h3>
-            <p>Landing page para empresa de hospedagem.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">HTML, CSS</p>
-            <a href="https://github.com/Pollymeowth/Website-Provedor-Hospedagem" class="btn" aria-label="Ver repositório do projeto Provedor de Hospedagem">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/MANHATTAN-COFFEE-HOUSE.png" alt="Capa do projeto Cafeteria" loading="lazy">
-          <div class="card-content">
-            <h3>Cafeteria</h3>
-            <p>Landing page para cafeteria urbana fictícia.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">HTML, CSS</p>
-            <a href="https://github.com/Pollymeowth/Cafeteria" class="btn" aria-label="Ver repositório do projeto Cafeteria">Ver Projeto</a>
-          </div>
-        </div>
-
-        <div class="card">
-          <img src="assets/unity.png" alt="Capa do projeto Unity Essentials" loading="lazy">
-          <div class="card-content">
-            <h3>Módulo Unity Essentials</h3>
-            <p>Projeto do módulo Unity Essentials (Unity Learn) para fundamentos da engine.</p>
-            <h4>Tecnologias:</h4>
-            <p class="tecnologias">C#, Unity</p>
-            <a href="https://github.com/Pollymeowth/Unity-Essentials" class="btn" aria-label="Ver repositório do projeto Unity Essentials">Ver Projeto</a>
-          </div>
-        </div>
+  <!-- ===== HABILIDADES ===== -->
+  <section class="habilidades" id="habilidades">
+    <h2 data-i18n="skills-title">Habilidades</h2>
+    <span class="linha"></span>
+    <div class="skills">
+      <div class="skill">
+        <i class="devicon-react-original"></i>
+        <p>React</p>
       </div>
-    </section>
-  </main>
+      <div class="skill">
+        <i class="devicon-nextjs-plain"></i>
+        <p>Next.js</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-typescript-plain"></i>
+        <p>TypeScript</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-nodejs-plain"></i>
+        <p>Node.js</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-python-plain"></i>
+        <p>Python</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-csharp-plain"></i>
+        <p>C#</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-postgresql-plain"></i>
+        <p>SQL</p>
+      </div>
+      <div class="skill">
+        <i class="devicon-git-plain"></i>
+        <p>Git</p>
+      </div>
+    </div>
+  </section>
 
-  <footer>
-    Desenvolvido por Pollyana Roberta — 2025
+  <!-- ===== PROJETOS ===== -->
+  <section class="projetos" id="projetos">
+    <h2 data-i18n="projects-title">Projetos</h2>
+    <span class="linha"></span>
+
+    <!-- Acadêmicos -->
+    <h3 class="subtitulo" data-i18n="projects-academic">Projetos Acadêmicos</h3>
+    <div class="cards-projetos">
+
+      <div class="card-projeto">
+        <img src="assets/DSM-1.png" alt="Site de Metodologia Scrum" loading="lazy" />
+        <h4 data-i18n="proj-acad-1-title">Site de Metodologia Scrum — 1º Semestre</h4>
+        <p data-i18n="proj-acad-1-desc">Curso online sobre Scrum desenvolvido no 1º semestre de DSM/Fatec Jacareí, com
+          foco em metodologias ágeis e
+          colaboração em equipe.</p>
+        <span class="tecnologias">HTML, CSS, JavaScript, PostgreSQL</span>
+        <a href="https://github.com/TechWizards-Tech/DSM-1" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/DSM-2.png" alt="Contador de Calorias" loading="lazy" />
+        <h4 data-i18n="proj-acad-2-title">Contador de Calorias — 2º Semestre</h4>
+        <p data-i18n="proj-acad-2-desc">Aplicação web para monitoramento calórico e recomendação de dietas, seguindo
+          Scrum. UI em React/TypeScript e
+          dados em PostgreSQL.</p>
+        <span class="tecnologias">HTML, CSS, JavaScript, React, PostgreSQL</span>
+        <a href="https://github.com/TechWizards-Tech/DSM-2" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/DSM-3.png" alt="Estação Meteorológica" loading="lazy" />
+        <h4 data-i18n="proj-acad-3-title">Estação Meteorológica — 3º Semestre</h4>
+        <p data-i18n="proj-acad-3-desc">Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas,
+          comparação, download em CSV e
+          alertas aos navegantes.</p>
+        <span class="tecnologias">HTML, CSS, JavaScript, React, Next.js, Tailwind, Vue</span>
+        <a href="https://github.com/TechWizards-Tech/HALF-TECH---DSM-3" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/DSM-4.jpeg" alt="Sistema de Captura Remota para Microscópios" loading="lazy" />
+        <h4 data-i18n="proj-acad-4-title">Sistema de Captura Remota para Microscópios — 4º Semestre</h4>
+        <p data-i18n="proj-acad-4-desc">Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital
+          acoplada, transmite vídeo em
+          tempo real via Wi-Fi para nuvem, com app mobile e interface web.</p>
+        <span class="tecnologias">Raspberry Pi, Python (Flask), React, React Native, GitHub Actions</span>
+        <a href="https://github.com/TechWizards-Tech/TECH-WIZARDS-DSM-4" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+    </div>
+
+    <!-- Pessoais -->
+    <h3 class="subtitulo" data-i18n="projects-personal">Projetos Pessoais</h3>
+    <div class="cards-projetos">
+
+      <div class="card-projeto">
+        <img src="assets/sorveteria.png" alt="Sorveteria" loading="lazy" />
+        <h4 data-i18n="proj-pes-1-title">Sorveteria</h4>
+        <p data-i18n="proj-pes-1-desc">SPA com React e Next.js representando o site de uma sorveteria fictícia.</p>
+        <span class="tecnologias">React, JavaScript, Next.js</span>
+        <a href="https://github.com/Pollymeowth/Projeto-Sorveteria" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/agencia.png" alt="Agência de Design Digital" loading="lazy" />
+        <h4 data-i18n="proj-pes-2-title">Agência de Design Digital</h4>
+        <p data-i18n="proj-pes-2-desc">SPA em React/Next.js para uma agência fictícia, com alternância de tema escuro.
+        </p>
+        <span class="tecnologias">React, JavaScript, Next.js</span>
+        <a href="https://github.com/Pollymeowth/agencia-design-digital" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/otica.png" alt="Ótica Vida" loading="lazy" />
+        <h4 data-i18n="proj-pes-3-title">Ótica Vida</h4>
+        <p data-i18n="proj-pes-3-desc">SPA em React/Next.js para uma ótica fictícia.</p>
+        <span class="tecnologias">React, JavaScript, Next.js</span>
+        <a href="https://github.com/Pollymeowth/Projeto-Otica-Vida" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/barbearia.png" alt="Landing Page Barbearia" loading="lazy" />
+        <h4 data-i18n="proj-pes-4-title">Landing Page Barbearia</h4>
+        <p data-i18n="proj-pes-4-desc">Landing page em React com controle de tema via useState (modo escuro).</p>
+        <span class="tecnologias">React, JavaScript, Next.js</span>
+        <a href="https://github.com/Pollymeowth/Projeto-Barbearia" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/Clinica Medica.png" alt="Clínica Médica" loading="lazy" />
+        <h4 data-i18n="proj-pes-5-title">Clínica Médica</h4>
+        <p data-i18n="proj-pes-5-desc">Site institucional para clínica médica fictícia.</p>
+        <span class="tecnologias">React, JavaScript, Next.js</span>
+        <a href="https://github.com/Pollymeowth/Clinica-Medica" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/POUSADA-SECRETA-HOME.png" alt="Pousada Secreta" loading="lazy" />
+        <h4 data-i18n="proj-pes-6-title">Pousada Secreta</h4>
+        <p data-i18n="proj-pes-6-desc">Website institucional de uma pousada fictícia.</p>
+        <span class="tecnologias">HTML, CSS</span>
+        <a href="https://github.com/Pollymeowth/Pousada" class="btn-projeto" target="_blank" rel="noopener noreferrer"
+          data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/Provedor Hospedagem HOME.png" alt="Provedor de Hospedagem" loading="lazy" />
+        <h4 data-i18n="proj-pes-7-title">Provedor de Hospedagem</h4>
+        <p data-i18n="proj-pes-7-desc">Landing page para empresa de hospedagem.</p>
+        <span class="tecnologias">HTML, CSS</span>
+        <a href="https://github.com/Pollymeowth/Website-Provedor-Hospedagem" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/MANHATTAN-COFFEE-HOUSE.png" alt="Cafeteria" loading="lazy" />
+        <h4 data-i18n="proj-pes-8-title">Cafeteria</h4>
+        <p data-i18n="proj-pes-8-desc">Landing page para cafeteria urbana fictícia.</p>
+        <span class="tecnologias">HTML, CSS</span>
+        <a href="https://github.com/Pollymeowth/Cafeteria" class="btn-projeto" target="_blank" rel="noopener noreferrer"
+          data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+      <div class="card-projeto">
+        <img src="assets/unity.png" alt="Unity Essentials" loading="lazy" />
+        <h4 data-i18n="proj-pes-9-title">Módulo Unity Essentials</h4>
+        <p data-i18n="proj-pes-9-desc">Projeto do módulo Unity Essentials (Unity Learn) para fundamentos da engine.</p>
+        <span class="tecnologias">C#, Unity</span>
+        <a href="https://github.com/Pollymeowth/Unity-Essentials" class="btn-projeto" target="_blank"
+          rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTATO ===== -->
+  <section class="contato" id="contato">
+    <h2 data-i18n="contact-title">Entre em Contato</h2>
+    <span class="linha"></span>
+    <form class="form-contato" onsubmit="enviarContato(event)">
+      <label for="nome" data-i18n="contact-name">Nome:</label>
+      <input type="text" id="nome" data-i18n-placeholder="contact-name-ph" placeholder="Digite seu nome" required />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" data-i18n-placeholder="contact-email-ph" placeholder="Digite seu e-mail"
+        required />
+
+      <label for="telefone" data-i18n="contact-phone">Telefone:</label>
+      <input type="tel" id="telefone" data-i18n-placeholder="contact-phone-ph" placeholder="(XX) XXXXX-XXXX" />
+
+      <label for="mensagem" data-i18n="contact-msg">Mensagem:</label>
+      <textarea id="mensagem" data-i18n-placeholder="contact-msg-ph" placeholder="Escreva sua mensagem aqui..."
+        required></textarea>
+
+      <button type="submit" class="btn-enviar" data-i18n="contact-btn">Enviar Mensagem</button>
+    </form>
+  </section>
+
+  <!-- ===== MODAL DE CONFIRMAÇÃO ===== -->
+  <div class="modal-overlay" id="modal-sucesso">
+    <div class="modal-box">
+      <div class="modal-icon">✅</div>
+      <h3 id="modal-titulo" data-i18n="modal-title">Mensagem Enviada!</h3>
+      <p id="modal-texto" data-i18n="modal-text">Sua mensagem foi enviada com sucesso. Entrarei em contato em breve!</p>
+      <button class="btn-modal" onclick="fecharModal()" data-i18n="modal-btn">Fechar</button>
+    </div>
+  </div>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <p data-i18n="footer">Copyright © 2025 by Pollyana Roberta | Todos os direitos reservados.</p>
   </footer>
+
+  <!-- Typed.js CDN -->
+  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- JS -->
+  <script src="main.js"></script>
 </body>
+
 </html>
