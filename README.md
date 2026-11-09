@@ -7,7 +7,7 @@
 ---
 
 ## 🔗 Links Importantes
-- **Portfólio Online:** [https://pollymeowth.github.io/](https://pollymeowth.github.io/Portfolio/)  
+- **Portfólio Online:** [https://fatec-jacarei-dsm-portfolio.github.io/ra2581392413003/](https://fatec-jacarei-dsm-portfolio.github.io/ra2581392413003/)  
 - **Pitch de Apresentação:** [Assista aqui](https://youtu.be/WagZYGAmRsg)  
 
 ---
