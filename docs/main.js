@@ -30,13 +30,15 @@ const translations = {
 
     // Projetos Acadêmicos
     "proj-acad-1-title": "Site de Metodologia Scrum — 1º Semestre",
-    "proj-acad-1-desc": "Curso online sobre Scrum desenvolvido no 1º semestre de DSM/Fatec Jacareí, com foco em metodologias ágeis e colaboração em equipe.",
+    "proj-acad-1-desc": "Curso online sobre Scrum desenvolvido no 1º semestre de DSM/Fatec Jacareí, com foco em metodologias ágeis e colaboração em equipe. Atuei como Scrum Master e no desenvolvimento das páginas usando HTML e CSS.",
     "proj-acad-2-title": "Contador de Calorias — 2º Semestre",
-    "proj-acad-2-desc": "Aplicação web para monitoramento calórico e recomendação de dietas, seguindo Scrum. UI em React/TypeScript e dados em PostgreSQL.",
+    "proj-acad-2-desc": "Aplicação web para monitoramento calórico e recomendação de dietas, seguindo Scrum. UI em React/TypeScript e dados em PostgreSQL. Atuei como Scrum Master e no desenvolvimento das lógicas para realização do calculo do monitoramento calórico e features de tips para o usuário.",
     "proj-acad-3-title": "Estação Meteorológica — 3º Semestre",
-    "proj-acad-3-desc": "Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas, comparação, download em CSV e alertas aos navegantes.",
+    "proj-acad-3-desc": "Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas, comparação, download em CSV e alertas aos navegantes. Atuei como Scrum Master e no desenvolvimento das telas de cadastro e login dos usuários, responsividade do sistema e recurso de download dos dados.",
     "proj-acad-4-title": "Sistema de Captura Remota para Microscópios — 4º Semestre",
-    "proj-acad-4-desc": "Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital acoplada, transmite vídeo em tempo real via Wi-Fi para nuvem, com app mobile e interface web.",
+    "proj-acad-4-desc": "Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital acoplada, transmite vídeo em tempo real via Wi-Fi para nuvem, com app mobile e interface web. Atuei como Scrum Master e o front end web do sistema, além de documentação.",
+    "proj-acad-5-title": "WizardVision — 5º Semestre",
+    "proj-acad-5-desc": "Sistema de informações para análise de desempenho físico de atletas de futebol com Inteligência Artificial e algoritmos de Machine Learning. Atuei como Scrum Master e no desenvolvimento do backend do sistema, desde a autenticação, importação de dados, desenvolvimento da API e aplicação de algoritmos de machine learning.",
 
     // Projetos Pessoais
     "proj-pes-1-title": "Sorveteria",
@@ -115,6 +117,8 @@ const translations = {
     "proj-acad-3-desc": "Web platform for weather station data at Lago de Furnas: charts, tables, comparison, CSV download, and navigator alerts.",
     "proj-acad-4-title": "Remote Capture System for Microscopes — 4th Semester",
     "proj-acad-4-desc": "System that captures images and videos from optical microscopes via an attached digital camera, streams real-time video over Wi-Fi to the cloud, with a mobile app and web interface.",
+    "proj-acad-5-title": "WizardVision — 5th Semester",
+    "proj-acad-5-desc": "Information system for analyzing the physical performance of soccer players using Artificial Intelligence and Machine Learning algorithms. I served as Scrum Master and worked on backend development, covering authentication, data import, API development, and machine learning algorithm implementation."
 
     // Personal Projects
     "proj-pes-1-title": "Ice Cream Shop",
