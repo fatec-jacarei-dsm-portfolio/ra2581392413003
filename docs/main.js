@@ -118,7 +118,7 @@ const translations = {
     "proj-acad-4-title": "Remote Capture System for Microscopes — 4th Semester",
     "proj-acad-4-desc": "System that captures images and videos from optical microscopes via an attached digital camera, streams real-time video over Wi-Fi to the cloud, with a mobile app and web interface.",
     "proj-acad-5-title": "WizardVision — 5th Semester",
-    "proj-acad-5-desc": "Information system for analyzing the physical performance of soccer players using Artificial Intelligence and Machine Learning algorithms. I served as Scrum Master and worked on backend development, covering authentication, data import, API development, and machine learning algorithm implementation."
+    "proj-acad-5-desc": "Information system for analyzing the physical performance of soccer players using Artificial Intelligence and Machine Learning algorithms. I served as Scrum Master and worked on backend development, covering authentication, data import, API development, and machine learning algorithm implementation.",
 
     // Personal Projects
     "proj-pes-1-title": "Ice Cream Shop",
