@@ -36,7 +36,7 @@ const translations = {
     "proj-acad-3-title": "Estação Meteorológica — 3º Semestre",
     "proj-acad-3-desc": "Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas, comparação, download em CSV e alertas aos navegantes. Atuei como Scrum Master e no desenvolvimento das telas de cadastro e login dos usuários, responsividade do sistema e recurso de download dos dados.",
     "proj-acad-4-title": "Sistema de Captura Remota para Microscópios — 4º Semestre",
-    "proj-acad-4-desc": "Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital acoplada, transmite vídeo em tempo real via Wi-Fi para nuvem, com app mobile e interface web. Atuei como Scrum Master e o front end web do sistema, além de documentação.",
+    "proj-acad-4-desc": "Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital acoplada, transmite vídeo em tempo real via Wi-Fi para nuvem, com app mobile e interface web. Atuei como Scrum Master e no desenvolvimento do front end web do sistema, além de documentação.",
     "proj-acad-5-title": "WizardVision — 5º Semestre",
     "proj-acad-5-desc": "Sistema de informações para análise de desempenho físico de atletas de futebol com Inteligência Artificial e algoritmos de Machine Learning. Atuei como Scrum Master e no desenvolvimento do backend do sistema, desde a autenticação, importação de dados, desenvolvimento da API e aplicação de algoritmos de machine learning.",
 
