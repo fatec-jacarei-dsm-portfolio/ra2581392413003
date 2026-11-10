@@ -249,6 +249,97 @@ body {
   transform: scale(1.05);
 }
 
+/* ===== FORMAÇÃO ACADÊMICA ===== */
+.formacao {
+  background: #efe8e0;
+  padding: 80px 10%;
+  text-align: center;
+}
+
+.formacao h2 {
+  color: #633f28;
+  font-size: 2.3rem;
+  margin-bottom: 10px;
+}
+
+.cards-formacao {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.card-formacao {
+  background: #e7dfd8;
+  border-radius: 16px;
+  padding: 28px;
+  border: 2px solid #a65936;
+  box-shadow: 0 4px 15px rgba(123, 86, 55, 0.15);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-formacao:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(123, 86, 55, 0.3);
+}
+
+.formacao-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 14px;
+}
+
+.formacao-header i {
+  font-size: 36px;
+  color: #a65936;
+}
+
+.formacao-periodo {
+  display: inline-block;
+  background: #a65936;
+  color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+}
+
+.card-formacao h3 {
+  color: #633f28;
+  font-size: 1.15rem;
+  margin-bottom: 6px;
+}
+
+.card-formacao h4 {
+  color: #a65936;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-formacao p {
+  color: #7b5637;
+  font-size: 0.92rem;
+  line-height: 1.6;
+}
+
+.lista-certificacoes {
+  list-style: disc;
+  padding-left: 18px;
+  color: #7b5637;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.lista-certificacoes li {
+  margin-bottom: 6px;
+}
+
 /* ===== HABILIDADES ===== */
 .habilidades {
   background: #e6d3c3;
@@ -357,6 +448,19 @@ body {
   object-position: top;
 }
 
+.abp-label {
+  display: inline-block;
+  align-self: flex-start;
+  background: #a65936;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+  padding: 4px 12px;
+  border-radius: 20px;
+  margin-bottom: 10px;
+  letter-spacing: 0.3px;
+}
+
 .card-projeto h4 {
   color: #633f28;
   font-size: 1.1rem;
@@ -413,6 +517,72 @@ body {
   color: #633f28;
   font-size: 2.3rem;
   margin-bottom: 10px;
+}
+
+.contato-subtitulo {
+  color: #7b5637;
+  font-size: 1rem;
+  max-width: 650px;
+  margin: 0 auto 35px;
+  line-height: 1.6;
+}
+
+.redes-profissionais {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.card-rede {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background: #efe8e0;
+  border: 2px solid #a65936;
+  border-radius: 16px;
+  padding: 24px 28px;
+  text-decoration: none;
+  color: #633f28;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+  box-shadow: 0 4px 15px rgba(123, 86, 55, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+}
+
+.card-rede:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 25px rgba(123, 86, 55, 0.3);
+  background: #fff;
+}
+
+.card-rede i {
+  font-size: 48px;
+  color: #a65936;
+  flex-shrink: 0;
+}
+
+.rede-info h3 {
+  font-size: 1.25rem;
+  color: #633f28;
+  margin-bottom: 2px;
+}
+
+.rede-info span {
+  display: inline-block;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #a65936;
+  margin-bottom: 6px;
+}
+
+.rede-info p {
+  font-size: 0.88rem;
+  color: #7b5637;
+  line-height: 1.4;
 }
 
 .form-contato {
@@ -721,6 +891,18 @@ body {
     text-align: center;
   }
 
+  .formacao {
+    padding: 60px 5%;
+  }
+
+  .formacao h2 {
+    font-size: 28px;
+  }
+
+  .cards-formacao {
+    grid-template-columns: 1fr;
+  }
+
   .habilidades {
     padding: 60px 5%;
   }
@@ -757,6 +939,12 @@ body {
 
   .contato h2 {
     font-size: 28px;
+  }
+
+  .card-rede {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
   }
 
   .footer {

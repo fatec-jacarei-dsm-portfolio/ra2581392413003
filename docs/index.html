@@ -4,20 +4,20 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title></title>
+  <title>Pollyana Roberta | Portfólio — Desenvolvedora Full Stack</title>
 
   <!-- SEO -->
   <meta name="description"
     content="Portfólio de Pollyana Roberta — desenvolvedora Full Stack com experiência em React, TypeScript, Node.js, Python, C#, Unity/VR e automações. Veja projetos, tecnologias e currículo." />
 
-  <!-- Fontes -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <!-- Fontes (Local) -->
+  <link href="vendor/poppins/poppins.css" rel="stylesheet" />
 
-  <!-- Ícones (Devicon) -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css" />
+  <!-- Ícones (Devicon Local) -->
+  <link rel="stylesheet" href="vendor/devicon/devicon.min.css" />
 
-  <!-- Boxicons -->
-  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <!-- Boxicons (Local) -->
+  <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
 
   <!-- CSS -->
   <link rel="stylesheet" href="styles.css" />
@@ -31,9 +31,10 @@
     <nav class="navbar">
       <a href="#home" style="--i:1">Home</a>
       <a href="#sobre" style="--i:2" data-i18n="nav-about">Sobre Mim</a>
-      <a href="#habilidades" style="--i:3" data-i18n="nav-skills">Habilidades</a>
-      <a href="#projetos" style="--i:4" data-i18n="nav-projects">Projetos</a>
-      <a href="#contato" style="--i:5" data-i18n="nav-contact">Contato</a>
+      <a href="#formacao" style="--i:3" data-i18n="nav-education">Formação</a>
+      <a href="#habilidades" style="--i:4" data-i18n="nav-skills">Habilidades</a>
+      <a href="#projetos" style="--i:5" data-i18n="nav-projects">Projetos</a>
+      <a href="#contato" style="--i:6" data-i18n="nav-contact">Contato</a>
       <button class="btn-lang" id="btn-lang" onclick="toggleLang()" aria-label="Switch language">
         🇺🇸 EN
       </button>
@@ -91,7 +92,42 @@
         gosto de jogos, leitura e exercício físico — interesses que influenciam meu modo de pensar,
         trazendo criatividade, disciplina e resolução de problemas para o desenvolvimento de software.
       </p>
-     <a href="assets/CURRICULO POLLYANA ROBERTA DE SOUSA.pdf" download class="botao-curriculo" data-i18n="about-btn">Baixar Currículo</a>
+      <a href="assets/CURRICULO POLLYANA ROBERTA DE SOUSA.pdf" download class="botao-curriculo" data-i18n="about-btn">Baixar Currículo</a>
+    </div>
+  </section>
+
+  <!-- ===== FORMAÇÃO ACADÊMICA ===== -->
+  <section class="formacao" id="formacao">
+    <h2 data-i18n="edu-title">Formação Acadêmica</h2>
+    <span class="linha"></span>
+
+    <div class="cards-formacao">
+      <div class="card-formacao">
+        <div class="formacao-header">
+          <i class="bx bxs-graduation"></i>
+          <span class="formacao-periodo" data-i18n="edu-1-period">2024 – 2026</span>
+        </div>
+        <h3 data-i18n="edu-1-course">Tecnologia em Desenvolvimento de Software Multiplataforma (CST)</h3>
+        <h4 data-i18n="edu-1-inst">FATEC Jacareí — Faculdade de Tecnologia do Estado de São Paulo (Jacareí/SP)</h4>
+        <p data-i18n="edu-1-desc">
+          Formação superior tecnológica com foco em desenvolvimento Full Stack, engenharia de software, banco de dados, computação em nuvem, dispositivos móveis, inteligência artificial e metodologias ágeis (Scrum) aplicadas em projetos reais por semestre (ABP).
+        </p>
+      </div>
+
+      <div class="card-formacao">
+        <div class="formacao-header">
+          <i class="bx bxs-award"></i>
+          <span class="formacao-periodo" data-i18n="edu-3-period">Certificações &amp; Cursos</span>
+        </div>
+        <h3 data-i18n="edu-3-course">Certificações Acadêmicas e Formação Complementar</h3>
+        <h4 data-i18n="edu-3-inst">FATEC / Coursera (IBM) / DevMedia </h4>
+        <ul class="lista-certificacoes">
+          <li data-i18n="edu-cert-1"><strong>Certificado Profissional Desenvolvedor Front-End</strong> — Faculdade de Tecnologia (Fatec)</li>
+          <li data-i18n="edu-cert-2"><strong>Certificado Profissional Desenvolvedor Back-End</strong> — Faculdade de Tecnologia (Fatec)</li>
+          <li data-i18n="edu-cert-3"><strong>IBM Full Stack Software Developer</strong> — Coursera (módulos de Cloud Computing e Software Engineering)</li>
+          <li data-i18n="edu-cert-4"><strong>Programador Full Stack</strong> — DevMedia (JavaScript, SQL, Front-end Web, React, Git/GitHub)</li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -141,15 +177,14 @@
     <span class="linha"></span>
 
     <!-- Acadêmicos -->
-    <h3 class="subtitulo" data-i18n="projects-academic">Projetos Acadêmicos</h3>
+    <h3 class="subtitulo" data-i18n="projects-academic">Projetos Acadêmicos (ABP – Fatec Jacareí)</h3>
     <div class="cards-projetos">
 
       <div class="card-projeto">
         <img src="assets/DSM-1.png" alt="Site de Metodologia Scrum" loading="lazy" />
-        <h4 data-i18n="proj-acad-1-title">Site de Metodologia Scrum — 1º Semestre</h4>
-        <p data-i18n="proj-acad-1-desc">Curso online sobre Scrum desenvolvido no 1º semestre de DSM/Fatec Jacareí, com
-          foco em metodologias ágeis e
-          colaboração em equipe.</p>
+        <span class="abp-label" data-i18n="proj-acad-1-label">ABP 1DSM – 1º Sem. 2024</span>
+        <h4 data-i18n="proj-acad-1-title">Site de Metodologia Scrum — ABP 1DSM – 1º Sem. 2024</h4>
+        <p data-i18n="proj-acad-1-desc">Curso online sobre Scrum desenvolvido no 1º semestre de DSM/Fatec Jacareí, com foco em metodologias ágeis e colaboração em equipe. Atuei como Scrum Master e no desenvolvimento das páginas usando HTML e CSS.</p>
         <span class="tecnologias">HTML, CSS, JavaScript, PostgreSQL</span>
         <a href="https://github.com/TechWizards-Tech/DSM-1" class="btn-projeto" target="_blank"
           rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
@@ -157,10 +192,9 @@
 
       <div class="card-projeto">
         <img src="assets/DSM-2.png" alt="Contador de Calorias" loading="lazy" />
-        <h4 data-i18n="proj-acad-2-title">Contador de Calorias — 2º Semestre</h4>
-        <p data-i18n="proj-acad-2-desc">Aplicação web para monitoramento calórico e recomendação de dietas, seguindo
-          Scrum. UI em React/TypeScript e
-          dados em PostgreSQL.</p>
+        <span class="abp-label" data-i18n="proj-acad-2-label">ABP 2DSM – 2º Sem. 2024</span>
+        <h4 data-i18n="proj-acad-2-title">Contador de Calorias — ABP 2DSM – 2º Sem. 2024</h4>
+        <p data-i18n="proj-acad-2-desc">Aplicação web para monitoramento calórico e recomendação de dietas, seguindo Scrum. UI em React/TypeScript e dados em PostgreSQL. Atuei como Scrum Master e no desenvolvimento das lógicas para realização do calculo do monitoramento calórico e features de tips para o usuário.</p>
         <span class="tecnologias">HTML, CSS, JavaScript, React, PostgreSQL</span>
         <a href="https://github.com/TechWizards-Tech/DSM-2" class="btn-projeto" target="_blank"
           rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
@@ -168,10 +202,9 @@
 
       <div class="card-projeto">
         <img src="assets/DSM-3.png" alt="Estação Meteorológica" loading="lazy" />
-        <h4 data-i18n="proj-acad-3-title">Estação Meteorológica — 3º Semestre</h4>
-        <p data-i18n="proj-acad-3-desc">Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas,
-          comparação, download em CSV e
-          alertas aos navegantes.</p>
+        <span class="abp-label" data-i18n="proj-acad-3-label">ABP 3DSM – 1º Sem. 2025</span>
+        <h4 data-i18n="proj-acad-3-title">Estação Meteorológica — ABP 3DSM – 1º Sem. 2025</h4>
+        <p data-i18n="proj-acad-3-desc">Plataforma web para dados de estações no Lago de Furnas: gráficos, tabelas, comparação, download em CSV e alertas aos navegantes. Atuei como Scrum Master e no desenvolvimento das telas de cadastro e login dos usuários, responsividade do sistema e recurso de download dos dados.</p>
         <span class="tecnologias">HTML, CSS, JavaScript, React, Next.js, Tailwind, Vue</span>
         <a href="https://github.com/TechWizards-Tech/HALF-TECH---DSM-3" class="btn-projeto" target="_blank"
           rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
@@ -179,10 +212,9 @@
 
       <div class="card-projeto">
         <img src="assets/DSM-4.jpeg" alt="Sistema de Captura Remota para Microscópios" loading="lazy" />
-        <h4 data-i18n="proj-acad-4-title">Sistema de Captura Remota para Microscópios — 4º Semestre</h4>
-        <p data-i18n="proj-acad-4-desc">Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital
-          acoplada, transmite vídeo em
-          tempo real via Wi-Fi para nuvem, com app mobile e interface web.</p>
+        <span class="abp-label" data-i18n="proj-acad-4-label">ABP 4DSM – 2º Sem. 2025</span>
+        <h4 data-i18n="proj-acad-4-title">Sistema de Captura Remota para Microscópios — ABP 4DSM – 2º Sem. 2025</h4>
+        <p data-i18n="proj-acad-4-desc">Sistema que coleta imagens e vídeos de microscópios ópticos via câmera digital acoplada, transmite vídeo em tempo real via Wi-Fi para nuvem, com app mobile e interface web. Atuei como Scrum Master e no desenvolvimento do front end web do sistema, além de documentação.</p>
         <span class="tecnologias">Raspberry Pi, Python (Flask), React, React Native, GitHub Actions</span>
         <a href="https://github.com/TechWizards-Tech/TECH-WIZARDS-DSM-4" class="btn-projeto" target="_blank"
           rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
@@ -190,9 +222,10 @@
 
       <div class="card-projeto">
         <img src="assets/DSM-5.png" alt="WizardVision" loading="lazy" />
-        <h4 data-i18n="proj-acad-5-title">WizardVision — 5º Semestre</h4>
-        <p data-i18n="proj-acad-5-desc">Sistema de informações para análise de desempenho físico de atletas de futebol com Inteligência Artificial e algoritmos de Machine Learning. </p>
-        <span class="tecnologias">React, Node.js, Postgree, Python, Machine Learning, GitHub Actions</span>
+        <span class="abp-label" data-i18n="proj-acad-5-label">ABP 5DSM – 1º Sem. 2026</span>
+        <h4 data-i18n="proj-acad-5-title">WizardVision — ABP 5DSM – 1º Sem. 2026</h4>
+        <p data-i18n="proj-acad-5-desc">Sistema de informações para análise de desempenho físico de atletas de futebol com Inteligência Artificial e algoritmos de Machine Learning. Atuei como Scrum Master e no desenvolvimento do backend do sistema, desde a autenticação, importação de dados, desenvolvimento da API e aplicação de algoritmos de machine learning.</p>
+        <span class="tecnologias">React, Node.js, PostgreSQL, Python, Machine Learning, GitHub Actions</span>
         <a href="https://github.com/TechWizards-Tech/wizard-vision" class="btn-projeto" target="_blank"
           rel="noopener noreferrer" data-i18n="btn-view">🔗 Ver Projeto</a>
       </div>
@@ -288,46 +321,44 @@
     </div>
   </section>
 
-  <!-- ===== CONTATO ===== -->
+  <!-- ===== CONTATO (REDES PROFISSIONAIS) ===== -->
   <section class="contato" id="contato">
-    <h2 data-i18n="contact-title">Entre em Contato</h2>
+    <h2 data-i18n="contact-title">Redes Profissionais</h2>
     <span class="linha"></span>
-    <form class="form-contato" onsubmit="enviarContato(event)">
-      <label for="nome" data-i18n="contact-name">Nome:</label>
-      <input type="text" id="nome" data-i18n-placeholder="contact-name-ph" placeholder="Digite seu nome" required />
+    <p class="contato-subtitulo" data-i18n="contact-subtitle">
+      Conecte-se comigo pelas minhas redes profissionais para acompanhar meus projetos, repositórios e trajetória acadêmica e profissional:
+    </p>
 
-      <label for="email">E-mail:</label>
-      <input type="email" id="email" data-i18n-placeholder="contact-email-ph" placeholder="Digite seu e-mail"
-        required />
+    <div class="redes-profissionais">
+      <a href="https://www.linkedin.com/in/pollyanaroberta42/" target="_blank" rel="noopener noreferrer"
+        class="card-rede" aria-label="LinkedIn de Pollyana Roberta">
+        <i class="devicon-linkedin-plain"></i>
+        <div class="rede-info">
+          <h3>LinkedIn</h3>
+          <span>/in/pollyanaroberta42</span>
+          <p data-i18n="contact-linkedin-desc">Perfil profissional, conexões e experiências na área de tecnologia.</p>
+        </div>
+      </a>
 
-      <label for="telefone" data-i18n="contact-phone">Telefone:</label>
-      <input type="tel" id="telefone" data-i18n-placeholder="contact-phone-ph" placeholder="(XX) XXXXX-XXXX" />
-
-      <label for="mensagem" data-i18n="contact-msg">Mensagem:</label>
-      <textarea id="mensagem" data-i18n-placeholder="contact-msg-ph" placeholder="Escreva sua mensagem aqui..."
-        required></textarea>
-
-      <button type="submit" class="btn-enviar" data-i18n="contact-btn">Enviar Mensagem</button>
-    </form>
-  </section>
-
-  <!-- ===== MODAL DE CONFIRMAÇÃO ===== -->
-  <div class="modal-overlay" id="modal-sucesso">
-    <div class="modal-box">
-      <div class="modal-icon">✅</div>
-      <h3 id="modal-titulo" data-i18n="modal-title">Mensagem Enviada!</h3>
-      <p id="modal-texto" data-i18n="modal-text">Sua mensagem foi enviada com sucesso. Entrarei em contato em breve!</p>
-      <button class="btn-modal" onclick="fecharModal()" data-i18n="modal-btn">Fechar</button>
+      <a href="https://github.com/pollymeowth" target="_blank" rel="noopener noreferrer"
+        class="card-rede" aria-label="GitHub de Pollyana Roberta">
+        <i class="devicon-github-original"></i>
+        <div class="rede-info">
+          <h3>GitHub</h3>
+          <span>@pollymeowth</span>
+          <p data-i18n="contact-github-desc">Repositórios de código, projetos acadêmicos (ABP) e projetos pessoais.</p>
+        </div>
+      </a>
     </div>
-  </div>
+  </section>
 
   <!-- ===== FOOTER ===== -->
   <footer class="footer">
-    <p data-i18n="footer">Copyright © 2025 by Pollyana Roberta | Todos os direitos reservados.</p>
+    <p data-i18n="footer">Copyright © 2026 by Pollyana Roberta | Todos os direitos reservados.</p>
   </footer>
 
-  <!-- Typed.js CDN -->
-  <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+  <!-- Typed.js (Local) -->
+  <script src="vendor/typed/typed.umd.js"></script>
   <!-- JS -->
   <script src="main.js"></script>
 </body>
